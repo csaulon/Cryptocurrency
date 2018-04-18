@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <!-- GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,400,500,700,900|Source+Sans+Pro:100,400,500,700,900" rel="stylesheet">
+        <!-- Animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <title>Cryptocurrency - Transaction</title>
+    </head>
+    
+    <body>
+            
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Login</a>
+            <a href="../pages/options.html"  style="color:white">Transaction</a>
+            <a href="../pages/broadcast.html">Broadcast</a>
+            <a href="../pages/verification.html">Verification</a>
+            <a href="../pages/blockchain.html">Blockchain</a>
+            <a href="../pages/success.html">Success</a>
+        </div>
+
+            <span class="hamburger" onclick="openNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+            </span>
+        
+                 <div class="row">
+             <div class="col-md-9">
+             </div>
+<div class="col-md-3 board">
+    <div class="board-inner">
+        <ul class="nav nav-tabs" id="myTab">
+            <div class="liner"></div>
+            <li>
+                <a href="../index.html">
+                    <span class="round-tabs one">
+                        <i class="icon icon-layer"></i>01
+                   </span>
+                  
+                </a>
+            </li>
+            <li  class="active">
+                <a href="../pages/options.html">
+                    <span class="round-tabs two">
+                        <i class="icon icon-layers"></i>02
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/broadcast.html">
+                    <span class="round-tabs three">
+                        <i class="icon icon-layers"></i>03
+                    </span>
+                </a>
+            </li>
+               <li>
+                <a href="../pages/verification.html">
+                    <span class="round-tabs four">
+                        <i class="icon icon-layers"></i>04
+                    </span>
+                </a>
+            </li>
+               <li>
+                <a href="../pages/blockchain.html">
+                    <span class="round-tabs five">
+                        <i class="icon icon-layers"></i>05
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/success.html">
+                    <span class="round-tabs six">
+                        <i class="icon icon-layers"></i>06
+                    </span>
+                </a>
+            </li>
+ </ul>
+    </div>
+</div>
+        
+        
+        </div>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+       
+        <div class="main" id="section2">
+            <section>
+            <section class="container">
+            <section class="row">
+                <h1 class="typewriter">Transaction</h1>
+                <div id="transactionContent" style="visibility:hidden;">
+                    <script>
+                        var transContent = document.querySelector("#transactionContent");
+                        
+                        
+                        setInterval(function(){
+                            transContent.style.visibility = "visible";
+
+                        }, 1300);
+                    </script>
+                   
+                    <section class="animated fadeIn" style="animation-delay: 1.5s;">
+                    <h3>Hello, what would you like to do today?</h3>
+
+                    <p>Your digital coins are stored within digital wallets. They enable users to receive, store, and send cryptocurrency through electronic signatures called keys. You have a private or public key, and their function depends on the transaction you are making. Similar to online banking today, you can send or receive currency, but without the need of the middle man. </p>
+                            
+                        <section class="col-sm-6" style="padding-left:0px">
+                            <button class="accordion"><h4>Send</h4></button>
+                                <div class="panel">
+                                    <h2>From </h2>
+                                   <h6 id="from"> Bitcoin</h6>
+
+                                        <p id="fromDescription" style="visibility: hidden">Which account would you like to send from? Your digital wallet has the ability to hold various digital currencies. <a style= "color:#3C91E6; font-weight:900" link href="https://www.weusecoins.com" target="_blank">Bitcoin</a> is the first and most popular decentralized currency.</p>
+                                          <script>
+                                        //SELECT
+                                        var from = document.querySelector("#from");
+                                        var fromDescription = document.querySelector("#fromDescription");
+                                        
+                                        var elementPairs = [
+                                            {from, fromDescription}
+                                        ];
+                                        
+                                        //MODIFY DESCRIPTION
+                                        from.addEventListener("click", function(){
+                                            fromDescription.style.visibility = "visible";
+                                        });
+                                    </script>
+                                    
+                                    <h2>To</h2>
+                                     <h6 id="to">77767c3130722c</h6>
+                                        <p id="toDescription" style="visibility: hidden">In order to send to another person, you must know their public key. Like an email address in online banking, your receiver must provide for you their electronic signature for a successful process.</p>
+                                    
+                                    <script>
+                                        //SELECT
+                                        var to = document.querySelector("#to");
+                                        var toDescription = document.querySelector("#toDescription");
+                                        
+                                        var elementPairs = [
+                                            {to, toDescription}
+                                        ];
+                                        
+                                        //MODIFY DESCRIPTION
+                                        to.addEventListener("click", function(){
+                                            toDescription.style.visibility = "visible";
+                                        });
+                                    </script>
+                                    
+                                    <h2>Amount</h2>
+                                    <h6 id="amount">50.0 BTC</h6>
+                                        
+                                        <p id="amountDescription" style="visibility: hidden">How much you would like to send is all up to you.</p>
+                                    <script>
+                                        //SELECT
+                                        var amount = document.querySelector("#amount");
+                                        var amountDescription = document.querySelector("#amountDescription");
+                                        
+                                        var elementPairs = [
+                                            {amount, amountDescription}
+                                        ];
+                                        
+                                        //MODIFY DESCRIPTION
+                                        amount.addEventListener("click", function(){
+                                            amountDescription.style.visibility = "visible";
+                                        });
+                                    </script>
+                                    <button><a href="../pages/broadcast.html">Continue</a></button>
+                                </div>
+                    </section>
+                                                <section class="col-sm-6" style="padding-right:0px">
+
+                            <button class="accordion"><h4>Receive</h4></button>
+                                <div class="panel">
+
+                                    <h2>Private Key</h2>
+
+                                        <h6 id="private">31cd8e45a00748</h6>
+                                        <p id="privateDescription" style="visibility: hidden">This key is your secret password. It is only meant for you and allows cryptocurrency to be spent.</p>
+                                    
+                                    <script>
+                                        //SELECT
+                                        var private = document.querySelector("#private");
+                                        var privateDescription = document.querySelector("#privateDescription");
+                                        
+                                        var elementPairs = [
+                                            {private, privateDescription}
+                                        ];
+                                        
+                                        //MODIFY DESCRIPTION
+                                        private.addEventListener("click", function(){
+                                            privateDescription.style.visibility = "visible";
+                                        });
+                                    </script>
+                                    
+                                    <h2>Public Key</h2>
+                                        <h6 id="public">b302f204738c02</h6>
+                                        <p id="publicDescription" style="visibility: hidden">This is the information you share with the rest of the world. It allows cryptocurrency to be received.</p>
+                                    
+                                    
+                                    <script>
+                                        //SELECT
+                                        var public = document.querySelector("#public");
+                                        var publicDescription = document.querySelector("#publicDescription");
+                                        
+                                        var elementPairs = [
+                                            {public, publicDescription}
+                                        ];
+                                        
+                                        //MODIFY DESCRIPTION
+                                        public.addEventListener("click", function(){
+                                            publicDescription.style.visibility = "visible";
+                                        });
+                                    </script>
+                                    
+                                    <button><a href="../pages/broadcast.html">Continue</a></button>
+                                </div> 
+                                                    
+                        </section>
+                                                    </section>
+
+                <script>
+                    function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}</script>
+                
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+            }
+            }
+        </script> 
+                    
+        </div>
+                </section>
+                </section>
+            </section>
+        </div>
+                <footer ><p>&copy; 2018 Chantelle Saulon<p></footer>
+    </body>
+</html>

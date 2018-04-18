@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <!-- GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,400,500,700,900|Source+Sans+Pro:100,400,500,700,900" rel="stylesheet">
+        <!-- Animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <title>Cryptocurrency - Broadcast</title>
+    </head>
+    
+    <body>
+        
+                          
+                    <!-- NAVIGATIONNAVIGATIONNAVIGATION -->
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Login</a>
+            <a href="../pages/options.html">Transaction</a>
+            <a href="../pages/broadcast.html"  style="color:white">Broadcast</a>
+            <a href="../pages/verification.html">Verification</a>
+            <a href="../pages/blockchain.html">Blockchain</a>
+            <a href="../pages/success.html">Success</a>
+        </div>
+
+            <span class="hamburger" onclick="openNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+            </span>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <div class="row">
+             <div class="col-md-9">
+             </div>
+<div class="col-md-3 board">
+    <div class="board-inner">
+        <ul class="nav nav-tabs" id="myTab">
+            <div class="liner"></div>
+            <li>
+                <a href="../index.html">
+                    <span class="round-tabs one">
+                        <i class="icon icon-layer"></i>01
+                   </span>
+                  
+                </a>
+            </li>
+            <li>
+                <a href="../pages/options.html">
+                    <span class="round-tabs two">
+                        <i class="icon icon-layers"></i>02
+                    </span>
+                </a>
+            </li>
+            <li   class="active">
+                <a href="../pages/broadcast.html">
+                    <span class="round-tabs three">
+                        <i class="icon icon-layers"></i>03
+                    </span>
+                </a>
+            </li>
+               <li>
+                <a href="../pages/verification.html">
+                    <span class="round-tabs four">
+                        <i class="icon icon-layers"></i>04
+                    </span>
+                </a>
+            </li>
+               <li>
+                <a href="../pages/blockchain.html">
+                    <span class="round-tabs five">
+                        <i class="icon icon-layers"></i>05
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/success.html">
+                    <span class="round-tabs six">
+                        <i class="icon icon-layers"></i>06
+                    </span>
+                </a>
+            </li>
+ </ul>
+    </div>
+</div>
+        
+        
+        </div>
+        
+           <section class="container">
+            <section class="row">
+            <h1 class="typewriter">Broadcast</h1>
+                  <div id="transactionContent" style="visibility:hidden;">
+                    <script>
+                        var transContent = document.querySelector("#transactionContent");
+                        
+                        
+                        setInterval(function(){
+                            transContent.style.visibility = "visible";
+
+                        }, 1300);
+                    </script>
+                   
+                    <section class="animated fadeIn" style="animation-delay: 1.5s;">       
+                <h3>Ok, we'll send your information across the network</h3>
+                            <p>Similar to footprints, your actions leave a trace. What you choose to do with your cryptocurrency is broadcasted across a peer-to-peer network of computers known as nodes. P2P is also a common term used to reference the exchange engagement.</p>
+                        
+                            <p>Hover over the networks to learn more!</p>
+  <img src="../img/map.svg" class="map">
+
+       
+                        
+        <div class="main" id="section3">
+        <section class="navy">               
+            <section class="container">
+                <section class="row">
+                       
+                    <section class="network">
+                    <span class="pulse">
+                        <button id="myBtn"></button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-dialog">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div style="overflow-x:fixed;">
+                                <h4 style="color:#11283F">The Average Daily No. of Transactions for Largest Cryptocurrencies</h4>
+                                
+                                <table class="broadcasttable">
+                                <tr>
+                                    <th><h4>Date</h4></th>
+                                    <th><h4>Bitcoin (BTC)</h4></th>
+                                      <th><h4>Ethereum (ETH)</h4></th>               
+                                    <th><h4 >Dash (DASH)</h4></th>
+                                </tr>
+                                    
+                                <tr>
+                                    <td>01-02 2017</td>
+                                    <td>286,419</td>
+                                    <td>42,908</td>
+                                    <td>1,800</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>10-12 2016</td>
+                                    <td>261,710</td>
+                                    <td>42,908</td>
+                                    <td >1,238</td>
+                                </tr>
+                                    
+                                <tr>
+                                    <td>07-09 2016</td>
+                                    <td>219,624</td>
+                                    <td>45,109</td>
+                                    <td >1,549</td>
+                                </tr>
+                                    
+                                <tr>
+                                    <td>04-06 2016</td>
+                                    <td>221,018</td>
+                                    <td>40,895</td>
+                                    <td>1,184</td>
+                                </tr>                                                                                                 </table>
+                            </div>              
+                          </div>
+                        </div>
+                       </div>
+                    </span>
+                        
+                    <span class="pulse2"></span>
+                    
+                    <span class="pulse3">
+                        <button id="myBtn3"></button>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non velit diam. Nunc odio massa, dictum sollicitudin ultricies imperdiet, viverra.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </span>
+                        
+                    <span class="pulse4"></span>
+                        
+                    <span class="pulse5">
+                        <button id="myBtn2"></button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non velit diam. Nunc odio massa, dictum sollicitudin ultricies imperdiet, viverra.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </span>                    
+                        
+                    <span class="pulse6"></span>
+                    <span class="pulse7"></span>
+                    <span class="pulse8"></span>
+
+                        
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal',);
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>  
+                       
+            </section>
+                </section>
+                    
+                
+                </section>
+            </section>
+             
+                         <a href="../pages/verification.html"><button class="next">Continue</button></a>
+                        </div>
+        </section> 
+                      
+        </div>
+                
+               </section>
+        </section>
+        
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <footer style="margin-top:200px;"><p>&copy; 2018 Chantelle Saulon<p></footer>
+    </body>
+</html>

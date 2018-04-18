@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#section5{
+    background-image: url("../img/block-01.svg");
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
+    #section1{
+    background-color:#3C91E6;
+    align-content: center;}
+    
+    #section1 p{
+        width:300px;
+        font-weight:400;
+     color:#DBEBFA;
+    font-size:14px;
+    }
+
+    #section1 h1{
+    margin:100px 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+        font-size: 35px;   
+        color:white;
+    }
+
+#section1 .hamburger div{
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0 0;
+    }
+
